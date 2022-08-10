@@ -1,0 +1,74 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+.container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Share Tech Mono, monospace;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "dis dis dis dis"
+        "AC C div times"
+        "seven eight nine minus"
+        "four five six plus"
+        "one two three equal"
+        "zero zero dot equal"
+    ;
+}
+
+.total {
+    color: white;
+}
+
+.padButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+.padButton:hover{
+    border: 1px solid whitesmoke;
+    color:#ccc;
+}
+
+.dark-btn {
+    background: #333;
+}
+
+.dis input {
+    color: rgb(0, 222, 189);
+    width: 100%;
+    text-align: right;
+}
+
+.dis {
+    grid-area: dis;
+    background-color: black;
+    text-align: right;
+    font-size: 20px;
+}
+
+.tomato {
+    background: tomato;
+}
+
+.equal {
+    grid-area: equal;
+    background-color: blue;
+}
+
+.zero {
+    grid-area: zero;
+}
